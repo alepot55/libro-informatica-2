@@ -1,0 +1,14 @@
+# Session buffer / handoff — locale, non versionato
+.remember/
+
+# OS / editor
+.DS_Store
+*.swp
+*~
+
+# Build/artefatti (es. PDF generati)
+/build/
+*.aux
+*.log
+*.toc
+*.out
