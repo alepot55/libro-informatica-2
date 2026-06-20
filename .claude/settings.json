@@ -16,14 +16,12 @@
       "Bash(ls:*)",
       "Bash(cat:*)",
       "Bash(wc:*)",
-      "Bash(find:*)",
       "Bash(mkdir:*)",
       "Bash(tree:*)"
     ],
     "deny": [
-      "Read(//home/alepot55/project/libro-informatica-2/.remember/**)",
-      "Bash(git push:*)",
-      "Bash(rm -rf:*)"
+      "Bash(rm:*)",
+      "Bash(git push:*)"
     ]
   }
 }
