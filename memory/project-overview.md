@@ -18,11 +18,13 @@ Stato al 2026-06-21:
 - **Memoria in-repo + sincronizzata**: `memory/` dentro il repo, auto-gestita,
   versionata e pushata su `origin`. Config in `.claude/settings.local.json`.
   Vedi [[harness-architecture]].
-- **Permessi: l'utente vuole "permessi liberi"** ma il classifier auto-mode ha
-  bloccato l'auto-concessione di un allowlist blanket (self-widening). Stato
-  attuale: allowlist esteso (incl. git push/pull/fetch, mv/cp/python3), deny solo
-  su `rm`. La decisione di passare a bypass totale spetta all'utente
-  (`/config` → Permissions, oppure `--dangerously-skip-permissions`).
+- **Permessi: l'utente ha scelto il BYPASS TOTALE** via
+  `claude --dangerously-skip-permissions` (deciso il 2026-06-21). È un flag di
+  avvio: nessun prompt di permessi, nessun guardrail, per tutta la sessione.
+  Va lanciato dall'utente (l'agente non può auto-concederselo: il classifier
+  auto-mode blocca il self-widening). `.claude/settings.json` mantiene comunque
+  un allowlist esteso (git push/pull/fetch, file ops, python3; deny su `rm`)
+  come fallback per le sessioni avviate SENZA il flag.
 - **Specifica del libro DA DEFINIRE**: tipo (scuola superiore / universitario /
   guida pratica / volume 2 di una serie), pubblico, livello, indice. L'utente
   ha detto che fornirà le info in seguito. Finché non arrivano: non inventare
