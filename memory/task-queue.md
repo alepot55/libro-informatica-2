@@ -12,25 +12,28 @@ Stato voci: `todo` → `in corso` → `done`.
 
 ## Completati
 - [x] Ingestione e organizzazione fonti (`research/sources/` + `research/extracted/`).
-- [x] Ricostruzione indice RIPAM (testo non estraibile) → `research/extracted/nld-ripam-583-index.md`.
+- [x] Ricostruzione indici via vision (RIPAM + NLD-Info TOC completa).
 - [x] Brief incarico → `docs/incarico-editoriale.md`; mappatura in memoria.
+- [x] **FASE 1 — Gap analysis completa** → `docs/gap-analysis.md`. Risultati in
+      [[gap-analysis-findings]]. Parte II del competitor = interamente coperta;
+      gap concentrati nella Parte I.
 
 ## In corso
 _(nessuno)_
 
-## Backlog — FASE 1: Gap analysis (priorità ALTA, in scadenza)
-- [ ] Tabella di copertura: ogni voce di **Competitor Parte I** mappata su
-      NLD-informatica + NLD-RIPAM, con classificazione Coperto / Mancante /
-      Da approfondire + note di livello.
-- [ ] Idem per **Competitor Parte II** (Office automation).
-- [ ] Sintesi: elenco ordinato dei gap (mancanti + da approfondire) → output
-      fase 1 per la redazione. Salvare in `docs/gap-analysis.md`.
-
-## Backlog — FASE 2: Integrazioni
-- [ ] Per ogni gap confermato, redigere la trattazione ex novo in `book/`
-      (italiano, taglio coerente col volume NLD di destinazione).
-- [ ] Review (tecnica + editoriale) e verifica esempi di codice.
+## Backlog — FASE 2: Integrazioni (in attesa di conferma redazione)
+Ordine di priorità (gap 🔴 mancanti prima):
+- [ ] 1. Algoritmi e strutture dati (complessità O/Ω/Θ, sorting, strutture dati).
+- [ ] 2. UML (use case, class, sequence, state chart, activity).
+- [ ] 3. Trasmissione dati: rilevazione errori (parità/CRC), commutazione, ATM/frame relay/ADSL.
+- [ ] 4. SO da riga di comando: MS-DOS/CLI, Linux (BASH, permessi, comandi, sudo).
+- [ ] 5. Big Data: ecosistema Hadoop/Spark.
+- [ ] 6. Software security: buffer overflow, vulnerabilità di memoria.
+- [ ] 7-13. Voci 🟡 "da approfondire" (vedi `docs/gap-analysis.md`).
+- [ ] Review (tecnica + editoriale) e verifica esempi di codice per ogni integrazione.
 
 ## Decisioni aperte (da confermare con utente/redazione)
-- A quale dei due volumi NLD è destinata ciascuna integrazione (base vs avanzato)?
+- A quale volume NLD destinare ciascuna integrazione (base = NLD-Info vs avanzato = RIPAM)?
 - Formato/lunghezza attesa delle integrazioni.
+- Verificare i capitoli RIPAM **online** (Parte VI Cap 4 SO; Parte VII Cap 5 sicurezza web)
+  prima di confermare i gap su Linux/CLI e sicurezza applicativa.
