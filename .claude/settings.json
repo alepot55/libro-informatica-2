@@ -12,16 +12,22 @@
       "Bash(git commit:*)",
       "Bash(git show:*)",
       "Bash(git restore:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git fetch:*)",
+      "Bash(git remote:*)",
       "Bash(rg:*)",
       "Bash(ls:*)",
       "Bash(cat:*)",
       "Bash(wc:*)",
       "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(python3:*)",
       "Bash(tree:*)"
     ],
     "deny": [
-      "Bash(rm:*)",
-      "Bash(git push:*)"
+      "Bash(rm:*)"
     ]
   }
 }

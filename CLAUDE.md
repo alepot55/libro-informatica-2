@@ -39,22 +39,25 @@ Principi (dai rules globali in `~/.claude/rules/`):
 
 ## 3. Protocollo di memoria (LEGGERE A INIZIO SESSIONE)
 
-Lo stato del progetto vive in **due** sistemi complementari:
+La memoria è **in-repo, automatica e sincronizzata con GitHub**: vive dentro il
+repository, è gestita automaticamente da Claude Code e viene committata/pushata
+su `origin` insieme al contenuto.
 
 | Sistema | Path | Scopo |
 |---------|------|-------|
-| Built-in memory | `~/.claude/projects/-home-alepot55-project-libro-informatica-2/memory/` | Fatti stabili: stato progetto, decisioni, **task queue**, preferenze. Indice in `MEMORY.md`. |
-| `.remember/` | `<repo>/.remember/` | Buffer di sessione / handoff (`remember.md`), log giornalieri. Git-ignored. |
+| Memoria durevole (auto-memory) | `<repo>/memory/` | Fatti stabili: stato progetto, decisioni, **task queue**, convenzioni. Indice in `memory/MEMORY.md`. **Versionata e pushata.** Auto-gestita via `autoMemoryEnabled` + `autoMemoryDirectory` + `autoDreamEnabled` in `.claude/settings.local.json`. |
+| Buffer di sessione | `<repo>/.remember/` | Scratch/handoff effimero (`remember.md`), log. **Locale, NON sincronizzato.** A fine sessione distilla ciò che conta dentro `memory/`. |
 
 Regole:
-1. A inizio sessione, l'indice `MEMORY.md` è caricato in contesto. Consultalo.
-2. La **coda dei task** del libro è in `memory/task-queue.md` — è la fonte di
-   verità su cosa scrivere/rivedere. Aggiornala man mano.
-3. Salva in memory: decisioni su struttura del libro, convenzioni di stile
-   emerse, stato dei capitoli (draft/review/done), feedback dell'utente.
-4. Scrivi l'handoff di fine sessione in `.remember/remember.md`.
-5. Una memoria = un file con frontmatter; aggiorna il file esistente invece di
-   duplicare.
+1. A inizio sessione l'indice `memory/MEMORY.md` è caricato automaticamente.
+   Consultalo.
+2. La **coda dei task** è in `memory/task-queue.md` — fonte di verità del lavoro.
+   Aggiornala man mano.
+3. Salva in `memory/`: decisioni su struttura/stile, stato dei capitoli
+   (draft/review/done), feedback dell'utente.
+4. Una memoria = un file con frontmatter; aggiorna il file esistente invece di
+   duplicare; collega le memorie con `[[nome]]`.
+5. **Committa e pusha la memoria** insieme al contenuto: fa parte del repo.
 
 ## 4. Layout del repository
 
@@ -63,11 +66,13 @@ libro-informatica-2/
 ├── CLAUDE.md            # questo file
 ├── README.md           # overview del progetto
 ├── .claude/
-│   └── settings.json   # permessi + comportamento harness
+│   ├── settings.json        # comportamento harness (versionato)
+│   └── settings.local.json  # auto-memory + config locale (git-ignored)
+├── memory/             # memoria durevole auto-gestita (versionata, pushata)
 ├── book/               # il manoscritto: un file .md per capitolo/sezione
 ├── research/           # fonti, appunti, materiale di riferimento (input)
 ├── docs/               # spec del libro, indice/outline, decisioni
-└── .remember/          # buffer/handoff di sessione (git-ignored)
+└── .remember/          # buffer/handoff di sessione (locale, git-ignored)
 ```
 
 (`book/`, `research/`, `docs/` partono vuoti — la struttura interna segue la

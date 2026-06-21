@@ -1,4 +1,7 @@
-# Session buffer / handoff — locale, non versionato
+# Config locale di Claude Code (machine-local, contiene path assoluti)
+.claude/settings.local.json
+
+# Buffer/handoff di sessione — locale, non sincronizzato
 .remember/
 
 # OS / editor
@@ -12,3 +15,5 @@
 *.log
 *.toc
 *.out
+
+# NOTA: memory/ è VERSIONATA di proposito (memoria sincronizzata su GitHub).
