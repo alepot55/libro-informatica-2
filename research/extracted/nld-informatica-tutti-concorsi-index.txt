@@ -1,0 +1,1232 @@
+©N
+  LD
+       Co
+         nc
+              or
+                 si
+PREMESSA
+
+Il Volume
+                                             completo, chiaro e aggiornato per tutti coloro che
+desiderano prepararsi in modo efficace alle prove di informatica previste nei concorsi pubblici.
+
+
+
+
+                                                           s                i
+proprie conoscenze.
+
+
+
+
+                                                        or
+accompagnando il lettore dalle basi teoriche
+algoritmi e i fondamenti logico-                                            architettura           ,
+del           e del funzionamento dei sistemi operativi.
+
+Accanto a tali conoscenze fondamentali, il volume sviluppa competenze operative attraverso
+                                                                      elaborazione testi, i
+
+
+
+
+                                         nc
+fogli di calcolo, le presentazioni multimediali e la gestione dei database, offrendo una
+
+funzionamento delle reti di computer, di Internet e degli strumenti di comunicazione e
+collaborazione digitale, con particolare attenzione ai profili di sicurezza informatica e protezione
+dei dati.
+
+
+introducono il lettore alle principali normative di settore, ai        di riferimento e alle
+                        Co
+            per la gestione dei sistemi informativi, nonché ai temi della                    IT,
+     implementazione dei sistemi e delle tendenze emergenti. In tale prospettiva, trovano spazio
+anche i moderni approcci allo sviluppo e alla gestione del                     Agile Manifesto, i
+suoi principi fondamentali e metodologie operative quali Scrum.
+
+Il volume si completa con un inquadramento degli aspetti giuridici e della cittadinanza digitale,
+fornendo le conoscenze essenziali per un utilizzo consapevole delle tecnologie e per operare, in
+particolare, nel contesto della Pubblica Amministrazione, nel rispetto del quadro normativo
+vigente.
+    LD
+
+
+Per consentire di affiancare allo studio teorico una immediata verifica della acquisita capacità
+di risolvere i corrispondenti test, il Manuale presenta quiz di verifica commentati per ciascuno
+dei Capitoli che compongono le indicate materie.
+
+Il Manuale permette, infine, l'accesso ad una estensione              , consultabile con apposita
+         , per rimane aggiornati sulle materie oggetto d'esame.
+©N
+SOMMARIO
+
+Parte I
+Fondamenti e sviluppi dell'informatica
+
+
+
+
+                                                                                                              i
+Capitolo 1
+
+
+
+
+                                                                                    s
+Dai segnali elettrici agli algoritmi ............................................................................................ 3
+1.           Definizioni: Informatica e ICT (Information and Communication Technology) ............. 3
+2.           Cenni di storia dell'informatica: dall'ENIAC alla Legge di Moore.................................... 4
+
+
+
+
+                                                                                 or
+2.1.         Le cinque generazioni dei computer.................................................................................. 4
+2.2.         La rivoluzione del Personal Computer e di Internet ......................................................... 5
+3.           Il linguaggio dei computer: la rappresentazione binaria dell'informazione.................... 6
+3.1.         Dal segnale elettrico al Bit ................................................................................................... 6
+3.2.         Il Byte: l'unità fondamentale dell'informazione .................................................................. 6
+4.           La codifica dei caratteri: da ASCII a Unicode, il linguaggio universale.......................... 7
+4.1.         Da Unicode a UTF-8: la codifica universale del Web ....................................................... 8
+4.2.
+4.3.
+4.4.
+4.5.
+5.
+5.1.
+5.2.
+                                                            nc
+             Analogico e digitale: due modi di rappresentare il mondo.............................................. 9
+             La rappresentazione digitale delle immagini ...................................................................10
+             La rappresentazione digitale dell'audio e del video .......................................................11
+             Compressione dei dati e formati dei file ..........................................................................11
+             I sistemi di numerazione: come contano i computer......................................................13
+             Il sistema decimale e il sistema binario............................................................................13
+             Cenni sui sistemi ottale ed esadecimale..........................................................................14
+                                   Co
+6.           Le unità di misura dell'informazione digitale ...................................................................15
+6.1.         Multipli del Byte: Kilobyte, Megabyte, Gigabyte..............................................................15
+6.2.         Prefissi decimali (SI) e binari (IEC): la reale capacità dei dispositivi ............................15
+7.           Il concetto di algoritmo: la ricetta per risolvere un problema........................................16
+7.1.         Le proprietà di un algoritmo ..............................................................................................17
+7.2.         I diagrammi di flusso (flowchart).......................................................................................17
+8.           Cenni sulla logica proposizionale e booleana: gli operatori AND, OR, NOT ...............19
+8.1.         Operatori logici avanzati: XOR e NAND...........................................................................20
+8.2.         I teoremi di De Morgan e l'algebra booleana ..................................................................21
+8.3.         Dalle porte logiche ai circuiti: come il computer esegue i calcoli.................................21
+     LD
+
+
+9.           Cenni sulla programmazione: dal problema al programma ..........................................22
+9.1.         I linguaggi di programmazione: una panoramica............................................................22
+9.2.         Compilatori e interpreti: tradurre il codice.......................................................................23
+9.3.         Lo pseudolinguaggio: descrivere un algoritmo a parole................................................23
+9.4.         Cenni su Java e la Java Virtual Machine .........................................................................24
+9.5.         I paradigmi di programmazione ........................................................................................24
+9.6.         I linguaggi per il Web: HTML, CSS, JavaScript...............................................................25
+9.7.         Concetti avanzati: middleware e API................................................................................26
+9.8.         Big Data e blockchain: le frontiere dell'informatica ........................................................26
+©N
+
+
+
+
+9.9.         Il quantum computing: cenni sui computer quantistici ..................................................27
+9.10.        L'intelligenza artificiale: dall'automazione al machine learning .....................................27
+9.11.        L'edge computing e il fog computing...............................................................................28
+9.12.        Le reti neurali e il deep learning: fondamenti..................................................................28
+9.13.        I sistemi di numerazione: conversioni e aritmetica binaria ............................................29
+Quiz.......................................................................................................................................... 31
+Risposte corrette .................................................................................................................... 33
+
+
+
+
+                                                                                                                                           VII |
+Capitolo 2
+L'hardware: il corpo del computer ........................................................................................ 34
+1.           L'architettura di un elaboratore: il modello di Von Neumann rivisitato ........................34
+1.1.         Il case e l'alimentatore: la struttura e l'energia del sistema ...........................................36
+2.           La scheda madre (motherboard): lo scheletro del sistema...........................................37
+
+
+
+
+                                                                                                                 i
+2.1.         BIOS e UEFI.........................................................................................................................38
+
+
+
+
+                                                                                       s
+3.           La CPU (Central Processing Unit): il cervello del computer .........................................38
+3.1.         L'Unità di Controllo (CU) e l'Unità Aritmetico-Logica (ALU)..........................................38
+3.2.         Il clock e la misurazione delle prestazioni........................................................................39
+3.3.         La pipeline: la catena di montaggio del processore.......................................................39
+
+
+
+
+                                                                                    or
+3.4.         Multi-core e multi-threading: più cervelli nello stesso chip ...........................................40
+3.5.         Architetture CISC e RISC e i principali produttori ..........................................................40
+4.           Le memorie: come il computer ricorda............................................................................41
+4.1.         La gerarchia delle memorie: velocità, capacità e costo.................................................41
+4.2.         La memoria centrale: RAM (la scrivania) e ROM (l'istinto) ............................................42
+4.2.1.       La RAM (Random Access Memory) .................................................................................42
+4.2.2.
+4.3.
+4.3.1.
+4.3.2.
+4.3.3.
+4.4.
+4.5.
+4.6.
+                                                              nc
+             La ROM (Read-Only Memory)...........................................................................................42
+             La memoria cache: la memoria a brevissimo termine ...................................................43
+             I livelli della memoria cache: L1, L2 e L3.........................................................................43
+             Tipi di RAM: SRAM, DRAM e le generazioni DDR ..........................................................43
+             La memoria virtuale e lo swap ..........................................................................................44
+             La memoria di massa: Hard Disk (HDD) vs Unità a Stato Solido (SSD) ......................44
+             Il RAID: combinare più dischi per sicurezza e prestazioni.............................................45
+             Funzionamento interno di HDD e SSD.............................................................................45
+                                    Co
+4.7.         Supporti ottici e storage di rete ........................................................................................46
+5.           Le periferiche di Input/Output (I/O): i sensi del computer .............................................47
+5.1.         Periferiche di Input (Ingresso)...........................................................................................47
+5.2.         Periferiche di Output (Uscita)............................................................................................47
+5.2.1.       Dispositivi Ibridi ...................................................................................................................47
+5.3.         Le schede di espansione: scheda video e scheda audio ..............................................48
+5.4.         La scheda di rete ................................................................................................................48
+6.           Porte e connettori: come si collega il mondo esterno....................................................49
+6.1.         USB (Universal Serial Bus): Lo standard universale ......................................................49
+6.2          Porte Video: Collegare i monitor.......................................................................................49
+      LD
+
+
+6.3          Porte di Rete e Audio .........................................................................................................50
+6.3.1.       Le generazioni USB in dettaglio........................................................................................50
+6.3.2.       Thunderbolt e le porte video in dettaglio.........................................................................51
+6.4          Plug and Play.......................................................................................................................51
+6.5.         Connessioni senza fili a corto raggio: Bluetooth e NFC.................................................51
+7.           Tipologie di sistemi di elaborazione moderni..................................................................52
+7.1.         Dispositivi personali: Desktop, Laptop, Tablet e Smartphone ......................................52
+7.2.         Le infrastrutture di Internet: Server, Data Center e Cloud Computing ........................52
+©N
+
+
+
+
+7.3.         Il computer "invisibile": Sistemi Embedded e IoT (Internet of Things).........................53
+7.4.         Il panorama completo dei sistemi informatici..................................................................53
+7.5.         Ergonomia della postazione informatica ..........................................................................54
+7.6.         I rifiuti elettronici (RAEE) e l'impatto ambientale.............................................................55
+7.7.         Diagnostica e risoluzione dei problemi hardware...........................................................55
+7.8.         Green IT: sostenibilità e impatto ambientale dell'informatica........................................55
+7.9.         Il cloud computing dal punto di vista hardware ..............................................................56
+7.10.        Le schede di espansione e l'evoluzione delle connessioni ...........................................56
+7.11.        Le stampanti: tipologie e caratteristiche tecniche ..........................................................57
+Quiz.......................................................................................................................................... 58
+
+
+| VIII
+Risposte corrette .................................................................................................................... 60
+
+Capitolo 3
+Il software: la mente del computer ........................................................................................ 61
+1.         Tipologie di software: il software di sistema e il software applicativo ..........................61
+
+
+
+
+                                                                                                              i
+2.         Il Software di Sistema.........................................................................................................62
+
+
+
+
+                                                                                    s
+2.1.       Il Sistema Operativo: il gestore di tutte le risorse ...........................................................62
+2.2.       Panoramica dei principali Sistemi Operativi....................................................................63
+2.3.       I driver di dispositivo: i traduttori per l'hardware.............................................................65
+2.4.       Il File System: organizzare i dati sul computer................................................................65
+
+
+
+
+                                                                                 or
+2.5.       Processi e Multitasking: il Sistema Operativo al lavoro .................................................67
+3.         Il Software Applicativo: dalle App ai programmi professionali......................................68
+3.1.       L'evoluzione del concetto di "Applicazione"....................................................................68
+3.2.       Classificazione dettagliata del software applicativo........................................................69
+3.3.       Il software come servizio: Cloud Computing e modelli di distribuzione ......................69
+4.         Le licenze e la distribuzione del software ........................................................................70
+4.1.
+4.2.
+4.3.
+4.4.
+4.5.
+5.
+5.1.
+5.2.
+                                                            nc
+           Software proprietario e commerciale...............................................................................70
+           Software Open Source ......................................................................................................71
+           Le licenze Freeware e Shareware ....................................................................................71
+           Le licenze Creative Commons ..........................................................................................72
+           La pirateria informatica: rischi e conseguenze ...............................................................73
+           Tendenze e sviluppi del software: uno sguardo al futuro ..............................................74
+           Intelligenza Artificiale e Apprendimento Automatico .....................................................74
+           Le applicazioni mobili (App) ..............................................................................................74
+                                   Co
+5.3.       Il Deep Learning e le Reti Neurali .....................................................................................74
+5.4.       L'AI Generativa e l'Elaborazione del Linguaggio Naturale.............................................75
+5.5.       Questioni etiche dell'Intelligenza Artificiale .....................................................................75
+5.6.       Il ciclo di vita del software e gli aggiornamenti ...............................................................76
+5.6.1.     Il software nella Pubblica Amministrazione italiana ........................................................77
+5.6.2.     Approfondimento sui linguaggi di programmazione ......................................................77
+5.6.3.     Il software come servizio: evoluzione dei modelli di distribuzione ...............................78
+5.6.4.     Il testing del software e la garanzia di qualità..................................................................78
+5.6.5.     La sicurezza del software: vulnerabilità e buone pratiche.............................................79
+5.6.6.     L'Agile manifesto e i suoi principi fondamentali..............................................................79
+     LD
+
+
+6.         Scrum: la metodologia Agile più diffusa ..........................................................................80
+6.1        Origini e evoluzione di Scrum ...........................................................................................80
+6.2        Ruoli in Scrum .....................................................................................................................81
+6.3        Artefatti di Scrum................................................................................................................81
+6.4        Cerimonie (eventi) di Scrum .............................................................................................82
+6.5        Il flusso di uno Sprint in Scrum .........................................................................................83
+6.6        Metaprogrammazione e Scaling in Scrum ......................................................................83
+7.         Extreme Programming (XP) ..............................................................................................84
+©N
+
+
+
+
+7.1        Filosofia e origini di Extreme Programming.....................................................................84
+7.2        Pratiche di Extreme Programming ...................................................................................84
+7.3        Relazione tra XP e Scrum..................................................................................................85
+8.         Lean Software Development .............................................................................................86
+8.1        Origini di Lean e applicazione al software .......................................................................86
+8.2        I sette principi di Lean Software Development ...............................................................86
+8.3        Pratiche Lean per il Software Development....................................................................87
+8.4        Kanban come implementazione di Lean..........................................................................87
+9.         Agile nel contesto del governo e Settore Pubblico ........................................................88
+9.1        Adozione di Agile nel settore pubblico ............................................................................88
+
+
+                                                                                                                                            IX |
+9.2          Sfide di Agile nel settore pubblico....................................................................................88
+9.3          Successi di Agile nel settore pubblico .............................................................................88
+Quiz.......................................................................................................................................... 89
+Risposte corrette .................................................................................................................... 91
+
+
+
+
+                                                                                                                  i
+Capitolo 4
+
+
+
+
+                                                                                       s
+Il sistema operativo: gestire il computer............................................................................... 92
+1.           L'interfaccia utente grafica (GUI): Desktop, icone, finestre e barra delle
+             applicazioni ..........................................................................................................................92
+1.1.         Il Desktop: la scrivania virtuale..........................................................................................93
+
+
+
+
+                                                                                    or
+1.2.         Le Icone: oggetti digitali a portata di clic .........................................................................93
+1.3.         La Barra delle Applicazioni (Taskbar) ..............................................................................94
+1.4.         Le Finestre (Windows) .......................................................................................................94
+2.           Il File System: organizzare e trovare dati con file e cartelle ..........................................95
+2.1.         L'Unità Radice (Root): La base dell'albero.......................................................................96
+2.2.         Le Cartelle (Folders o Directory): I rami dell'albero........................................................96
+2.3.
+2.4.
+2.5.
+3.
+3.1.
+3.2.
+3.3.
+3.4.
+                                                              nc
+             Il Percorso (Path): L'indirizzo esatto .................................................................................96
+             Il File: La foglia dell'albero..................................................................................................97
+             Le Estensioni più comuni ...................................................................................................97
+             Operazioni fondamentali: creare, copiare, spostare, eliminare e rinominare .............98
+             Creare una nuova cartella .................................................................................................99
+             Rinominare un file o una cartella ......................................................................................99
+             Copiare vs Spostare (Tagliare) .........................................................................................99
+             Eliminare un file...................................................................................................................99
+                                    Co
+3.5.         Selezionare più file contemporaneamente ....................................................................100
+4.           Personalizzazione del sistema: il Pannello di Controllo e le Impostazioni .................101
+4.1.         Aspetto e personalizzazione............................................................................................102
+4.2.         Data, ora e lingua..............................................................................................................103
+4.3.         Dispositivi (stampanti, mouse e bluetooth)....................................................................103
+4.3.1.       Collegare e scollegare dispositivi esterni: la rimozione sicura ...................................103
+4.4.         Accessibilità: un computer per tutti................................................................................104
+4.5.         Risparmio Energia (Power Options) ...............................................................................104
+4.5.1.        Green IT: risparmio energetico e riciclo responsabile dei dispositivi .......................104
+5.           Gestione delle applicazioni: installare e disinstallare programmi ...............................105
+      LD
+
+
+5.1.         Installare un programma..................................................................................................105
+5.2.         Disinstallare un programma.............................................................................................105
+5.3.         Aggiornare i programmi...................................................................................................106
+5.4.         Gestione dei processi: quando un programma si blocca ............................................106
+6.           Desktop e interfaccia: l'ambiente di lavoro quotidiano ................................................107
+7.           Gestione avanzata di file e cartelle .................................................................................108
+8.           Installazione e gestione del software..............................................................................108
+9.           Pannello di controllo, impostazioni e configurazione del sistema ..............................110
+©N
+
+
+
+
+10.          La virtualizzazione: più sistemi operativi su un solo computer ...................................111
+10.1.        Manutenzione e ripristino del sistema operativo ..........................................................112
+10.2.        Accessibilità e funzioni assistive del sistema operativo ...............................................113
+10.3.        Gestione degli account utente e sicurezza del sistema...............................................113
+10.4.        Gestione dello spazio di archiviazione e backup ..........................................................114
+10.5.        Le scorciatoie da tastiera essenziali...............................................................................114
+10.6.        La stampa dei documenti: configurazione e gestione..................................................115
+Quiz........................................................................................................................................ 117
+Risposte corrette .................................................................................................................. 119
+
+
+
+
+|X
+Capitolo 5
+Elaborazione testi (es. Microsoft Word) .............................................................................. 120
+1.        L'interfaccia di un word processor: creare e gestire documenti ................................120
+1.1.      La struttura della Barra Multifunzione ............................................................................121
+1.2.      Il ciclo di vita di un documento: Creazione, Apertura e Salvataggio..........................122
+
+
+
+
+                                                                                                                   i
+1.3.      Le modalità di visualizzazione .........................................................................................122
+
+
+
+
+                                                                                        s
+1.4.      Selezionare, copiare, tagliare e incollare il testo ..........................................................123
+2.        Formattazione del testo: carattere, paragrafo ed elenchi............................................123
+2.1.      Formattazione del carattere ............................................................................................123
+2.2.      Formattazione del paragrafo ...........................................................................................124
+
+
+
+
+                                                                                     or
+2.3.      I rientri ................................................................................................................................124
+2.4.      Elenchi puntati e numerati ...............................................................................................125
+2.5.      Copia formato: lo strumento magico ..............................................................................125
+3.        Impaginazione avanzata: lavorare con tabelle, immagini e intestazioni.....................125
+3.1.      Le tabelle: organizzare i dati............................................................................................126
+3.2.      Le immagini: integrare contenuti visivi...........................................................................126
+3.3.
+4.
+4.1.
+4.1.1.
+4.2.
+4.3.
+5.
+5.1.
+                                                              nc
+          Intestazione e piè di pagina: la struttura ricorrente ......................................................127
+          Strumenti di revisione e condivisione: il formato PDF .................................................127
+          Strumenti di revisione: correzione e collaborazione ....................................................127
+          Trova e sostituisci .............................................................................................................128
+          Il formato PDF: condividere in sicurezza .......................................................................128
+          Stampare un documento .................................................................................................128
+          Formattazione avanzata del documento ........................................................................129
+          Gli stili e i temi ...................................................................................................................129
+                                     Co
+5.2.      Sezioni e interruzioni ........................................................................................................130
+5.3.      Intestazioni, pié di pagina e numeri di pagina ...............................................................130
+5.4.      Colonne e filigrana............................................................................................................130
+6.        Strumenti avanzati di revisione e collaborazione .........................................................131
+6.1.      Revisioni (Track Changes) in dettaglio ..........................................................................131
+6.2.      Trova e Sostituisci avanzato............................................................................................131
+6.3.      La stampa unione (Mail Merge) ......................................................................................131
+7.        Strumenti per documenti lunghi e strutturati ................................................................132
+7.1.      Sommario automatico ......................................................................................................132
+7.2.      Note a pié di pagina e note di chiusura .........................................................................132
+      LD
+
+
+7.3.      Riferimenti incrociati e segnalibri....................................................................................132
+8.        Tabelle e oggetti grafici: approfondimenti .....................................................................133
+8.1.      Formule nelle tabelle ........................................................................................................133
+8.2.      Testo alternativo e accessibilità delle immagini............................................................133
+8.3.      SmartArt e grafici in Word ...............................................................................................133
+8.4.      Caselle di testo e WordArt...............................................................................................133
+9.        Formati di file e interoperabilità.......................................................................................133
+10.       Accessibilità dei documenti.............................................................................................134
+©N
+
+
+
+
+11.       La stampa unione: approfondimenti e applicazioni nella PA.......................................135
+12.       Documenti lunghi e professionali: strumenti avanzati ..................................................136
+12.1.     L'indice analitico (Index) ..................................................................................................136
+12.2.     Indice delle figure e delle tabelle ....................................................................................136
+12.3.     La visualizzazione Struttura .............................................................................................136
+12.4.     Documenti master e sottodocumenti .............................................................................136
+13.       Modelli, parti rapide e automazione del documento ....................................................137
+13.1.     I modelli (.dotx e .dotm) ...................................................................................................137
+13.2.     Le parti rapide (Building Blocks).....................................................................................137
+13.3.     Campi modulo e Content Control...................................................................................137
+
+
+                                                                                                                                                  XI |
+13.4.        Le macro in Word: concetti fondamentali......................................................................138
+13.4.1.      L'elaborazione testi nella Pubblica Amministrazione ...................................................138
+Quiz........................................................................................................................................ 139
+Risposte corrette .................................................................................................................. 141
+
+
+
+
+                                                                                                               i
+Capitolo 6
+
+
+
+
+                                                                                     s
+Fogli di calcolo (es. Microsoft Excel)................................................................................... 142
+1.           L'interfaccia di un foglio di calcolo: celle, righe e colonne ..........................................142
+1.1.         La struttura della griglia ...................................................................................................143
+1.2.         Elementi chiave dell'interfaccia .......................................................................................143
+
+
+
+
+                                                                                  or
+2.           Inserire, formattare e ordinare i dati...............................................................................143
+2.1.         Tipologie di dati.................................................................................................................144
+2.2.         Formattazione delle celle .................................................................................................144
+2.3.         Gestione di righe e colonne ............................................................................................144
+2.4.         Ordinamento e filtro..........................................................................................................145
+2.5.         La formattazione condizionale.........................................................................................145
+3.
+3.1.
+3.1.1.
+3.2.
+3.3.
+4.
+4.1.
+4.2.
+                                                            nc
+             Utilizzo di formule e funzioni fondamentali (somma, media, se) .................................145
+             La logica delle formule .....................................................................................................146
+             Riferimenti relativi, assoluti e misti..................................................................................146
+             Le funzioni: formule predefinite.......................................................................................147
+             Il riempimento automatico ...............................................................................................148
+             Visualizzare i dati: creare e personalizzare grafici........................................................149
+             Le tipologie di grafico più comuni...................................................................................149
+             Creare un grafico: la procedura passo-passo...............................................................150
+                                   Co
+4.3.         Personalizzare il grafico ...................................................................................................151
+4.4.         Stampare un foglio di calcolo..........................................................................................151
+5.           Funzioni avanzate di ricerca e analisi.............................................................................152
+5.1.         Funzioni di ricerca avanzate ............................................................................................152
+5.2.         Funzioni logiche avanzate................................................................................................152
+5.3.         Funzioni di testo ................................................................................................................153
+5.4.         Funzioni di data e ora .......................................................................................................153
+6.           Le tabelle pivot: analisi interattiva dei dati .....................................................................153
+7.           Tipologie di grafico: guida alla scelta .............................................................................154
+8.           Intervalli denominati e riferimenti avanzati ....................................................................155
+        LD
+
+
+9.           Validazione dei dati e protezione del foglio ...................................................................155
+10.          Le macro: cenni sull'automazione in Excel....................................................................156
+11.          Formati di file e compatibilità ..........................................................................................156
+12.          Funzioni avanzate: approfondimenti e casi pratici........................................................157
+12.1.        La funzione CERCA.X (XLOOKUP) ................................................................................157
+12.2.        Il SE nidificato e le alternative moderne.........................................................................158
+12.3.        CONTA.SE e SOMMA.SE con criteri multipli................................................................158
+12.4.        Funzioni di testo avanzate ...............................................................................................158
+©N
+
+
+
+
+12.5.        Funzioni di data avanzate ................................................................................................158
+13.          Le tabelle pivot: approfondimenti operativi ...................................................................159
+14.          Strumenti di analisi dati e verifica delle formule ...........................................................160
+14.1.        Excel nella Pubblica Amministrazione: applicazioni pratiche......................................161
+Quiz........................................................................................................................................ 162
+Risposte corrette .................................................................................................................. 164
+
+Capitolo 7
+Presentazioni multimediali (es. Microsoft Powerpoint) ..................................................... 165
+1.        Progettare una presentazione efficace: layout, temi e struttura .................................165
+
+
+| XII
+1.1.         La gerarchia della presentazione....................................................................................165
+1.2.         Le slide e i segnaposto ....................................................................................................166
+1.3.         Il Layout: l'organizzazione spaziale .................................................................................166
+1.4.         I Temi e la coerenza visiva...............................................................................................167
+1.5.         Lo Schema Diapositiva: il controllo centralizzato..........................................................167
+
+
+
+
+                                                                                                                i
+1.6.         Regole d'oro per la struttura............................................................................................167
+
+
+
+
+                                                                                      s
+2.           Lavorare con le diapositive: inserire testi, immagini e oggetti multimediali ..............168
+2.1.         La gestione del testo: oltre i segnaposto .......................................................................168
+2.2.         Le immagini: l'impatto visivo............................................................................................168
+2.3.         SmartArt: trasformare elenchi in diagrammi .................................................................168
+
+
+
+
+                                                                                   or
+2.4.         Contenuti multimediali: video e audio ............................................................................169
+2.5.         Tabelle, grafici e collegamenti ipertestuali ....................................................................170
+3.           Rendere dinamica la presentazione: transizioni e animazioni.....................................171
+3.1.         Le transizioni: il cambio di scena ....................................................................................171
+3.2.         Le animazioni: dare vita agli oggetti ...............................................................................172
+3.3.         Il riquadro animazione e la sequenza temporale ..........................................................172
+4.
+4.1.
+4.2.
+4.3.
+4.4.
+5.
+6.
+7.
+                                                             nc
+             Eseguire e condividere una presentazione ...................................................................172
+             La Visualizzazione Relatore .............................................................................................173
+             I formati di salvataggio: PPTX, PPSX e PDF..................................................................173
+             Stampare una presentazione ..........................................................................................174
+             Collaborazione in tempo reale e altri formati di esportazione.....................................174
+             Principi avanzati di progettazione visiva ........................................................................174
+             Transizioni e animazioni: approfondimenti avanzati .....................................................175
+             Gestione avanzata degli elementi multimediali .............................................................175
+                                    Co
+8.           Funzionalità avanzate per la presentazione...................................................................176
+9.           Lo Schema diapositiva: personalizzazione avanzata....................................................177
+10.          Confronto tra software di presentazione .......................................................................177
+11.          Presentazioni interattive e navigazione non lineare .....................................................178
+12.          Collaborazione e distribuzione delle presentazioni ......................................................179
+13.          Accessibilità nelle presentazioni .....................................................................................180
+13.1.        Suggerimenti pratici per presentazioni efficaci nei concorsi ......................................181
+Quiz........................................................................................................................................ 182
+Risposte corrette .................................................................................................................. 184
+      LD
+
+
+Capitolo 8
+Database................................................................................................................................ 185
+1.        I database: perché servono .............................................................................................185
+2.        Basi di dati e DBMS..........................................................................................................185
+3.        Il modello relazionale........................................................................................................186
+3.1.      Tabelle, record e campi ...................................................................................................186
+3.2.      I tipi di dato ........................................................................................................................187
+3.3.      La chiave primaria ............................................................................................................187
+©N
+
+
+
+
+3.4.      Le relazioni tra tabelle ......................................................................................................188
+3.5.      L'integrità referenziale......................................................................................................189
+3.6.      Il modello Entità-Relazione (E-R): progettare un database..........................................189
+3.7.      La normalizzazione: organizzare i dati senza ridondanze............................................191
+4.        Interrogare un database: le query e cenni di SQL .......................................................192
+4.1.      SQL ampliato: JOIN, funzioni di aggregazione e gestione delle tabelle ....................193
+4.2.      Gli indici: velocizzare l'accesso ai dati............................................................................195
+4.3.      Le proprietà ACID: affidabilità delle transazioni ............................................................195
+4.4.      I database NoSQL: oltre il modello relazionale .............................................................196
+4.5.      Progettazione concettuale avanzata: generalizzazione, aggregazione e vincoli ......196
+
+
+                                                                                                                                             XIII |
+4.6.         SQL avanzato: subquery, operazioni insiemistiche e manipolazione dei dati...........198
+5.           Maschere e report ............................................................................................................199
+6.           Cenni su Microsoft Access ..............................................................................................200
+7.           Amministrazione di un database.....................................................................................200
+7.1.         Utenti e permessi: GRANT e REVOKE ...........................................................................201
+
+
+
+
+                                                                                                                i
+7.2.         Backup e recovery............................................................................................................201
+
+
+
+
+                                                                                      s
+7.3.         Sicurezza del database ....................................................................................................201
+7.4.         Log e audit trail .................................................................................................................202
+8.           Data warehouse e Business Intelligence .......................................................................202
+9.           I database nella Pubblica Amministrazione ...................................................................203
+
+
+
+
+                                                                                   or
+9.1.         I registri pubblici digitali ...................................................................................................203
+9.2.         Interoperabilità dei database nella PA............................................................................203
+9.3.         Open data e dataset pubblici ..........................................................................................204
+9.4.         I DBMS utilizzati nella PA.................................................................................................204
+Quiz........................................................................................................................................ 205
+Risposte Corrette.................................................................................................................. 206
+
+Capitolo 9
+
+1.
+1.1.
+1.2.
+1.3.
+1.4.
+                                                             nc
+Le reti di computer e il funzionamento di Internet ............................................................. 207
+            Le reti di computer: condividere risorse e informazioni ..............................................207
+            Gli elementi costitutivi di una rete...................................................................................208
+            Il modello Client-Server ...................................................................................................209
+            Le topologie di rete...........................................................................................................210
+            I mezzi trasmissivi nel dettaglio.......................................................................................211
+                                    Co
+1.5.        I dispositivi di rete: dal hub al router ..............................................................................212
+2.          Classificazione delle reti: LAN, MAN, WAN e WLAN ...................................................212
+2.1.        PAN (Personal Area Network).........................................................................................212
+2.2.        LAN Local( Area Network)...............................................................................................213
+2.3.        MAN (Metropolitan Area Network) .................................................................................213
+2.4.        WAN (Wide Area Network)..............................................................................................213
+2.5.        WLAN (Wireless Local Area Network) ...........................................................................213
+2.6.        Il modello OSI: i sette livelli della comunicazione di rete .............................................214
+2.7.        Il modello TCP/IP e il confronto con il modello OSI .....................................................215
+3.          Il funzionamento di Internet: il protocollo TCP/IP e gli indirizzi IP...............................216
+      LD
+
+
+3.1.        TCP e UDP: i due protocolli di trasporto........................................................................216
+3.2.        I protocolli del livello applicativo .....................................................................................217
+3.3.        Indirizzamento IP avanzato: IPv4, IPv6, NAT e subnet.................................................217
+3.4.        La logica a pacchetti: l'analogia postale.........................................................................218
+3.5.        L'indirizzo IP: la targa digitale ..........................................................................................219
+3.6.        IP Statico e Dinamico .......................................................................................................220
+3.7.        Gli altri parametri di connessione: subnet mask, gateway e DHCP ...........................220
+3.8.        Intranet, Extranet e VPN...................................................................................................220
+©N
+
+
+
+
+4.          Dal nome di dominio all'indirizzo IP: a cosa serve il sistema DNS..............................221
+4.1.        La rubrica telefonica di Internet ......................................................................................221
+4.2.        Il processo di Risoluzione DNS .......................................................................................221
+4.3.        La struttura di un Nome di Dominio................................................................................222
+5.          Il World Wide Web (WWW)..............................................................................................223
+5.1.        La nascita del Web: un'invenzione europea ..................................................................223
+5.2.        I tre pilastri del Web..........................................................................................................223
+5.3.        Il concetto di Ipertesto e Link ..........................................................................................224
+6.          Gli strumenti per esplorare il Web: i Browser e i Motori di Ricerca ...........................224
+6.1.        Il Web Browser: il veicolo.................................................................................................224
+
+
+| XIV
+6.2.         Il Motore di Ricerca: la bussola .......................................................................................226
+6.3.         La differenza in un'analogia .............................................................................................226
+6.4.         Le tecnologie di connessione a Internet........................................................................227
+6.5.         L'evoluzione del Web: dal Web 1.0 al Web 3.0 .............................................................228
+6.6.         La sicurezza dei protocolli di rete ...................................................................................228
+
+
+
+
+                                                                                                                i
+6.6.1.       Protocolli sicuri: HTTPS, TLS, SSH ................................................................................228
+
+
+
+
+                                                                                      s
+6.6.2.       Gli attacchi di rete più comuni ........................................................................................229
+6.7.         Il DNS in dettaglio: gerarchia, record e registrazione dei domini ...............................229
+6.7.1.       La gerarchia del DNS e i root server..............................................................................230
+6.7.2.       I record DNS......................................................................................................................230
+
+
+
+
+                                                                                   or
+6.8.         CDN, web hosting e registrazione dei domini ...............................................................230
+6.9.         Tecnologie wireless avanzate: dal Bluetooth al 5G ......................................................231
+6.9.1.       Bluetooth e BLE ................................................................................................................231
+6.9.2.       NFC e RFID........................................................................................................................231
+6.9.3.       Reti mesh e Li-Fi ...............................................................................................................231
+6.9.4.       Il 5G in dettaglio ................................................................................................................232
+7.
+7.1.
+7.2.
+7.3.
+7.4.
+8.
+8.1.
+8.2.
+                                                             nc
+             Il Cloud Computing: l'informatica come servizio...........................................................232
+             I tre modelli di servizio: IaaS, PaaS, SaaS .....................................................................232
+             Cloud pubblico, privato e ibrido......................................................................................233
+             Vantaggi e rischi del cloud ..............................................................................................233
+             Il Cloud nella Pubblica Amministrazione italiana ..........................................................233
+             L'Internet delle Cose (IoT) ...............................................................................................234
+             L'architettura dell'IoT ........................................................................................................234
+             I protocolli dell'IoT.............................................................................................................234
+                                    Co
+8.3.         Applicazioni dell'IoT..........................................................................................................234
+8.4.         L'IoT nella Pubblica Amministrazione.............................................................................235
+9.           La crittografia e i protocolli di sicurezza ........................................................................235
+Quiz........................................................................................................................................ 236
+Risposte Corrette.................................................................................................................. 238
+
+Capitolo 10
+Comunicare e collaborare in rete ........................................................................................ 239
+1.        La Posta Elettronica: struttura e utilizzo .........................................................................239
+1.1       L'indirizzo di posta elettronica.........................................................................................239
+      LD
+
+
+1.2       Struttura di un messaggio................................................................................................240
+1.3       Come funziona: Client vs Webmail e i Protocolli ..........................................................241
+1.4       Posta indesiderata e regole di sicurezza .......................................................................241
+2.        La Posta Elettronica Certificata (PEC): valore legale e differenze..............................242
+2.1.      Il meccanismo di funzionamento: le ricevute ................................................................242
+2.2.      Il circuito chiuso: PEC su PEC.........................................................................................243
+2.3.      Differenze principali tra Email e PEC..............................................................................243
+3.        Messaggistica Istantanea e VoIP (Voice over IP) .........................................................244
+©N
+
+
+
+
+3.1.      La Messaggistica Istantanea (IM) ...................................................................................244
+3.2.      Il protocollo VoIP: telefonare tramite Internet ...............................................................244
+3.3       Le piattaforme di videoconferenza .................................................................................245
+4.        I Social Network: evoluzione e impatto ..........................................................................246
+4.1.      La struttura di base: Profilo e Connessioni....................................................................246
+4.2.      Tipologie e piattaforme principali ...................................................................................246
+4.3.      Il meccanismo del Feed e l'Algoritmo ............................................................................246
+4.4       Rischi, consapevolezza e tutela della privacy nei social..............................................247
+5.        Strumenti di collaborazione online: il cloud computing e le suite per ufficio ............247
+5.1.      Le suite per ufficio nel Cloud...........................................................................................247
+
+
+                                                                                                                                             XV |
+5.2.         Archiviazione e condivisione: il Cloud Storage.............................................................248
+5.3          Il lavoro agile: lo smart working.......................................................................................249
+6.           Apprendimento a distanza: E-learning e piattaforme LMS..........................................249
+6.1.         Modalità Sincrona e Asincrona .......................................................................................249
+6.2.         Il cuore del sistema: le piattaforme LMS........................................................................250
+
+
+
+
+                                                                                                                     i
+7.           Approfondimento sulla posta elettronica: protocolli, intestazioni e buone
+
+
+
+
+                                                                                          s
+             pratiche ..............................................................................................................................251
+8.           La PEC nel dettaglio: funzionamento tecnico e obblighi .............................................251
+9.           Piattaforme di collaborazione e produttività in cloud ...................................................252
+10.          I social media nella Pubblica Amministrazione .............................................................252
+
+
+
+
+                                                                                       or
+11.          La comunicazione digitale nella Pubblica Amministrazione........................................253
+12.          Videoconferenza e lavoro agile (smart working) ..........................................................253
+12.1.        Collaborazione in cloud: strumenti e piattaforme .........................................................254
+12.2.        La Netiquette: regole di buona condotta digitale..........................................................254
+12.3.        I blog, i wiki e i forum: strumenti di condivisione della conoscenza ...........................255
+12.4.        La comunicazione istituzionale digitale nella PA ..........................................................255
+12.5.
+
+
+
+Capitolo 11
+                                                                nc
+             La sicurezza nelle comunicazioni online........................................................................256
+Quiz........................................................................................................................................ 257
+Risposte corrette .................................................................................................................. 259
+
+
+Sicurezza informatica: proteggere dati e dispositivi ......................................................... 260
+1.
+1.1.
+             Le minacce informatiche: Malware (virus, trojan, ransomware) e Phishing..............260
+             Il ciclo di vita di un attacco informatico e i casi reali ....................................................262
+                                     Co
+1.2.         L'ingegneria sociale oltre il phishing: le tecniche avanzate di manipolazione ..........264
+2.           Gli attori della sicurezza: la differenza tra Hacking, Cracking e Hacking etico .........265
+3.           Strumenti di difesa attivi: antivirus, firewall e anti-malware.........................................266
+3.1.         Il Firewall ............................................................................................................................267
+3.2.         Software Anti-malware e Anti-spyware..........................................................................267
+3.3.         La crittografia: l'arte di proteggere le informazioni.......................................................267
+3.4.         La sicurezza delle reti: firewall, VPN e protezione Wi-Fi..............................................270
+3.5.         La sicurezza della posta elettronica e della navigazione web.....................................270
+3.6.         La sicurezza dei dispositivi mobili e dell'Internet of Things (IoT)................................272
+4.           Le buone pratiche per la sicurezza ................................................................................273
+       LD
+
+
+4.1.         Autenticazione e controllo degli accessi........................................................................273
+4.2.         Backup e disaster recovery: proteggere i dati dalla perdita .......................................273
+4.3.         La sicurezza nella navigazione: protocolli HTTPS e certificati digitali........................274
+4.4.         Gestione sicura delle credenziali: password efficaci e autenticazione a più
+             fattori...................................................................................................................................275
+4.5.         L'importanza del backup dei dati ....................................................................................276
+5.           Sicurezza fisica e benessere digitale .............................................................................277
+5.1.         Il quadro normativo della sicurezza informatica............................................................277
+©N
+
+
+
+
+5.2.         Incident response e digital forensics: gestire e investigare un attacco .....................278
+5.2.1.       L'ingegneria sociale (social engineering): attacchi alla persona ................................279
+5.2.2.       Malware: classificazione avanzata e ciclo di un attacco ..............................................280
+5.2.3.       Sicurezza della navigazione web e delle comunicazioni .............................................280
+5.2.4.       Sicurezza dei dispositivi mobili e dell'Internet of Things..............................................281
+5.3.         Ergonomia: la postazione di lavoro corretta ..................................................................281
+5.4.         Green IT e il riciclo dei dispositivi elettronici (RAEE) ...................................................282
+Quiz........................................................................................................................................ 283
+Risposte corrette .................................................................................................................. 285
+
+
+
+
+| XVI
+Capitolo 12
+Cittadinanza digitale e aspetti giuridici............................................................................... 286
+1.           La protezione dei dati personali: i principi del GDPR...................................................286
+1.1.         Che cos'è un "Dato Personale"? .....................................................................................287
+1.2.         I protagonisti della Privacy...............................................................................................287
+
+
+
+
+                                                                                                              i
+1.3.         I principi fondamentali del trattamento...........................................................................287
+
+
+
+
+                                                                                    s
+1.4.         Le basi giuridiche del trattamento ..................................................................................288
+1.5          I diritti dell'interessato.......................................................................................................289
+2.           Il diritto d'autore (copyright) e le licenze software........................................................289
+2.1.         Il concetto di Licenza d'uso .............................................................................................289
+
+
+
+
+                                                                                 or
+2.2.         Oltre il software: le licenze Creative Commons ............................................................290
+3.           I crimini informatici: tipologie e tutele.............................................................................291
+3.1.         L'attacco ai sistemi: intrusione e danneggiamento.......................................................291
+3.2.         L'attacco al patrimonio: la frode informatica .................................................................292
+3.3.         L'attacco alla persona: Cyberbullismo e furto d'identità ..............................................292
+3.4.         La tutela istituzionale: la Polizia Postale .........................................................................293
+4.
+4.1.
+4.2.
+4.3.
+4.4.
+4.5.
+4.6.
+4.7.
+                                                            nc
+             L'amministrazione digitale italiana: SPID, CIE e PagoPA.............................................293
+             La Carta della cittadinanza digitale.................................................................................294
+             Il Decreto Semplificazioni e l'accelerazione digitale.....................................................294
+             L'AgID: il "regista" della trasformazione. ........................................................................294
+             SPID: Il Sistema Pubblico di Identità Digitale ................................................................294
+             CIE: La Carta d'Identità Elettronica.................................................................................295
+             PagoPA: Il sistema dei pagamenti ..................................................................................295
+             App IO: Il punto di accesso unico ...................................................................................295
+                                   Co
+4.8.         Il protocollo informatico e il fascicolo digitale ...............................................................296
+4.9.         La trasparenza amministrativa e i siti istituzionali .........................................................296
+5.           Il valore legale dei documenti digitali: il certificato e la firma digitale ........................297
+5.1.         La gerarchia delle Firme Elettroniche ............................................................................297
+5.2.         La Firma Digitale: funzionamento e strumenti...............................................................298
+5.3.         La Marca Temporale: certificare il "quando" .................................................................299
+6.           Comportamento e regole in rete: Netiquette, Fake News e pensiero critico ............299
+6.1.         La Netiquette: il galateo di Internet.................................................................................299
+6.2.         Fake News e disinformazione .........................................................................................299
+6.3.         Il pensiero critico e il Fact-checking...............................................................................300
+     LD
+
+
+7.           I sette principi fondamentali del GDPR ..........................................................................300
+8.           Il Codice dell'Amministrazione Digitale: identità, documenti e servizi .......................302
+9.           Accessibilità digitale: i siti web della PA per tutti ..........................................................303
+10.          Open data e trasparenza amministrativa .......................................................................303
+11.          Commercio elettronico e diritto di Internet....................................................................304
+12.          Il framework DigComp e le competenze digitali ...........................................................304
+12.1.        Il divario digitale (digital divide).......................................................................................305
+12.2.        La fatturazione elettronica e i pagamenti digitali nella PA ...........................................305
+©N
+
+
+
+
+12.3.        La firma digitale: tipologie e validità giuridica ...............................................................305
+12.4.        Il diritto alla disconnessione e il lavoro agile .................................................................307
+12.5.        L'etica nell'era digitale: responsabilità e consapevolezza............................................307
+12.6.        La tutela dei minori online e il controllo parentale........................................................307
+12.7.        La conservazione digitale dei documenti ......................................................................308
+Quiz........................................................................................................................................ 309
+Risposte corrette .................................................................................................................. 311
+
+
+
+
+                                                                                                                                         XVII |
+Capitolo 13
+Fondamenti della sicurezza delle informazioni e governance IT ...................................... 312
+1.           Introduzione alla sicurezza delle informazioni e alla governance IT ..........................312
+1.1          Definizioni fondamentali e contesto storico...................................................................312
+1.2          Evoluzione storica della consapevolezza sulla sicurezza e la governance ...............313
+
+
+
+
+                                                                                                                  i
+1.3          Il modello di sicurezza della CIA Triad: una fondazione concettuale .........................314
+
+
+
+
+                                                                                       s
+1.4          Assets, vulnerabilità, minacce, rischi: il lessico della gestione del rischio di
+             sicurezza ............................................................................................................................315
+1.5          Importanza della governance e della gestione della sicurezza per le
+             organizzazioni moderne ...................................................................................................317
+
+
+
+
+                                                                                    or
+2.           Panorama normativo e regolamentare globale.............................................................318
+2.1          Livelli di regolamentazione e il contesto internazionale...............................................318
+2.2          Standard vs. normative: una distinzione critica ............................................................319
+2.3          Diversi approcci geografici alle normative sulla privacy e sulla sicurezza ................320
+Quiz........................................................................................................................................ 322
+Risposte corrette .................................................................................................................. 322
+
+Capitolo 14
+
+1.
+1.1
+1.2
+
+1.2.1
+                                                              nc
+Standard internazionali per la sicurezza delle informazioni.............................................. 323
+             La serie ISO 27000: la fondazione degli standard internazionali................................323
+             Contesto e importanza della serie ISO 27000 ..............................................................323
+             ISO 27001: sistemi di gestione della sicurezza delle informazioni - aspetti
+             fondamentali ......................................................................................................................323
+             Il modello plan-do-check-act e la filosofia di ISO 27001 .............................................324
+                                    Co
+1.2.2        Struttura e requisiti di ISO 27001:2022 .........................................................................324
+1.2.3        Allegato A: il catalogo dei controlli di sicurezza............................................................326
+1.3          ISO 27002: codice di pratica - guida e implementazione............................................327
+1.4          ISO 27005: gestione del rischio della sicurezza delle informazioni - processo
+             dettagliato ..........................................................................................................................327
+2.           ISO 20000: la gestione dei servizi IT..............................................................................328
+2.1          Posizionamento di ISO 20000 nel panorama degli standard ......................................328
+2.2          Requisiti chiave di ISO 20000-1: un approccio processuale ......................................328
+Quiz........................................................................................................................................ 331
+Risposte corrette .................................................................................................................. 331
+      LD
+
+
+Capitolo 15
+Normative specifiche per settore e giurisdizione ................................................
+
+Capitolo 16
+Framework aggiuntivi e migliori pratiche ........................................................................... 333
+1.           COBIT: governance e gestione dell'IT a livello strategico ...........................................333
+1.1          Contesto e importanza di COBIT nel panorama della governance IT .......................333
+©N
+
+
+
+
+1.2          Principi fondamentali di COBIT 2019: una visione olistica ..........................................333
+1.3          Aree di governance e processi di COBIT ......................................................................334
+2.           ITIL: il framework pratico per la gestione dei servizi IT................................................335
+2.1          Posizionamento di ITIL nel contesto della governance IT ...........................................335
+2.2          Il ciclo di vita dei servizi e le pratiche di ITIL 4..............................................................335
+3.           Framework per la gestione del rischio...........................................................................336
+3.1          NIST Risk Management Framework (RMF): un approccio strutturato .......................336
+3.2          ISO 31000: una norma internazionale per la gestione del rischio..............................337
+Quiz........................................................................................................................................ 339
+
+
+
+| XVIII
+Risposte corrette .................................................................................................................. 339
+
+Capitolo 17
+Implementazione, governance e tendenze emergenti.........................................
+
+
+
+
+                                                                                                             i
+Parte II
+
+
+
+
+                                                                                    s
+Test di verifica con soluzioni commentate
+
+Capitolo 1
+
+
+
+
+                                                                                 or
+Dai segnali elettrici agli algoritmi ........................................................................................ 343
+Risposte commentate .........................................................................................................................345
+
+Capitolo 2
+           ............................................................................................................................ 347
+Risposte commentate .........................................................................................................................349
+
+Capitolo 3
+
+                                                           nc
+Il Software ............................................................................................................................. 351
+Risposte commentate .........................................................................................................................354
+
+Capitolo 4
+Il Sistema Operativo ............................................................................................................. 357
+                                   Co
+Risposte commentate .........................................................................................................................359
+
+Capitolo 5
+Elaborazione Testi (Word).................................................................................................... 361
+Risposte commentate .........................................................................................................................363
+
+Capitolo 6
+Fogli di Calcolo (Excel)......................................................................................................... 365
+Risposte commentate .........................................................................................................................367
+
+Capitolo 7
+     LD
+
+
+Presentazioni (PowerPoint).................................................................................................. 369
+Risposte commentate .........................................................................................................................371
+
+Capitolo 8
+I Database.............................................................................................................................. 373
+Risposte commentate .........................................................................................................................375
+
+Capitolo 9
+©N
+
+
+
+
+Le Reti di Computer e Internet............................................................................................. 377
+Risposte commentate .........................................................................................................................379
+
+Capitolo 10
+Comunicare e Collaborare in Rete ...................................................................................... 381
+Risposte commentate .........................................................................................................................383
+
+Capitolo 11
+Sicurezza Informatica........................................................................................................... 385
+
+
+
+                                                                                                                                         XIX |
+Risposte commentate .........................................................................................................................387
+
+Capitolo 12
+Cittadinanza Digitale e Aspetti Giuridici ............................................................................. 389
+Risposte commentate .........................................................................................................................391
+
+
+
+
+                                                                                    s                        i
+Capitolo 13
+Fondamenti della sicurezza delle informazioni e governance IT ...................................... 393
+Risposte commentate .........................................................................................................................394
+
+
+
+
+                                                                                 or
+Capitolo 14
+Standard internazionali per la sicurezza delle informazioni.............................................. 396
+Risposte commentate .........................................................................................................................397
+
+Capitolo 15
+Normative specifiche per settore e giurisdizione .............................................................. 399
+
+
+
+
+                                                           nc
+Risposte commentate .........................................................................................................................400
+
+Capitolo 16
+Framework aggiuntivi e migliori pratiche ........................................................................... 402
+Risposte commentate .........................................................................................................................403
+
+Capitolo 17
+Implementazione, governance e tendenze emergenti....................................................... 405
+                                   Co
+Risposte commentate .........................................................................................................................406
+       LD
+©N
+
+
+
+
+| XX
+

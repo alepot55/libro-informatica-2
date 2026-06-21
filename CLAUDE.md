@@ -10,18 +10,19 @@ Guida operativa per Claude Code in questo repository.
 
 ## 1. Identità del progetto
 
-`libro-informatica-2` è un progetto di **scrittura di un libro di informatica in
-italiano**, condotto in modo semi-autonomo con Claude Code.
+`libro-informatica-2` è un **incarico editoriale** per la redazione **NLD
+concorsi**: confrontare l'indice di un volume **competitor** (solo Parti I-II)
+con due volumi **NLD**, individuare i **gap** (contenuti mancanti o da
+approfondire) e redigere **ex novo le integrazioni** di informatica.
+Brief completo: `docs/incarico-editoriale.md`. Memoria: vedi `memory/`.
 
-- **Lingua del libro**: italiano. Tutto il contenuto del libro (capitoli,
-  esercizi, esempi) è in italiano.
-- **Lingua di lavoro / config / git**: inglese per messaggi di commit e nomi
-  file; italiano nella comunicazione con l'utente.
-- **Specifica del libro (scope, pubblico, indice): DA DEFINIRE.** L'utente
-  fornirà i dettagli (tipo di libro, livello, struttura) in un secondo momento.
-  Finché non arrivano, NON inventare contenuti né struttura dei capitoli:
-  registra ciò che è noto in memory e chiedi quando serve una decisione di
-  contenuto.
+- **Lingua dei contenuti**: italiano. Tutte le integrazioni (testo, esercizi,
+  esempi) sono in italiano.
+- **Lingua di lavoro / config / git**: inglese per commit e nomi file; italiano
+  nella comunicazione con l'utente.
+- **Fonti** in `research/sources/` (PDF) e `research/extracted/` (testo).
+  ⚠️ L'indice **RIPAM non è estraibile** come testo → usare
+  `research/extracted/nld-ripam-583-index.md` (ricostruito via vision).
 
 ## 2. Modello operativo
 
@@ -69,26 +70,27 @@ libro-informatica-2/
 │   ├── settings.json        # comportamento harness (versionato)
 │   └── settings.local.json  # auto-memory + config locale (git-ignored)
 ├── memory/             # memoria durevole auto-gestita (versionata, pushata)
-├── book/               # il manoscritto: un file .md per capitolo/sezione
-├── research/           # fonti, appunti, materiale di riferimento (input)
-├── docs/               # spec del libro, indice/outline, decisioni
+├── research/
+│   ├── sources/        # PDF originali degli indici (3 fonti)
+│   └── extracted/      # testo estratto + indice RIPAM ricostruito (.md)
+├── docs/               # brief incarico, gap-analysis (output fase 1)
+├── book/               # integrazioni redatte ex novo (output fase 2)
 └── .remember/          # buffer/handoff di sessione (locale, git-ignored)
 ```
 
-(`book/`, `research/`, `docs/` partono vuoti — la struttura interna segue la
-specifica del libro quando arriva.)
+## 5. Workflow dell'incarico (due fasi, on-demand)
 
-## 5. Workflow di authoring (on-demand)
+**Fase 1 — Gap analysis** (in scadenza):
+1. Mappa ogni voce di **Competitor Parte I-II** sui due volumi NLD.
+2. Classifica: Coperto / Mancante / Da approfondire (+ note di livello).
+3. Output → `docs/gap-analysis.md`; aggiorna `memory/task-queue.md`.
 
-Quando l'utente chiede di scrivere/rivedere:
-
-1. **Outline first** — se la sezione non è in `task-queue.md`, definisci scopo,
-   prerequisiti, obiettivi didattici prima di scrivere.
-2. **Draft** — scrivi il contenuto in `book/<...>.md`, italiano, didattico.
-3. **Review** — usa un agent (`code-reviewer` per esempi di codice;
-   review editoriale per il testo) per coerenza, accuratezza tecnica, livello.
-4. **Revise** — applica i fix; aggiorna lo stato in `task-queue.md`.
-5. **Commit** quando la sezione è stabile.
+**Fase 2 — Integrazioni**:
+1. Per ogni gap confermato, redigi la trattazione ex novo in `book/<...>.md`,
+   italiano, taglio coerente col volume NLD di destinazione.
+2. **Review** — agent `code-reviewer` per gli esempi di codice (devono essere
+   corretti e testabili), review editoriale per il testo.
+3. **Revise** + aggiorna `task-queue.md`. **Commit** quando stabile.
 
 Esempi di codice nel libro: devono essere **corretti e testabili**. Verifica il
 codice (eseguilo quando possibile) prima di includerlo.
